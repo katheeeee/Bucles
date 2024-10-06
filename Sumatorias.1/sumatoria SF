@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+long long f(int n) {
+    long long r=1;
+    for(int i= 2;i<=n; i++) {
+        r=r*i;
+    }
+    return r;
+}
+int main() {
+    int n;
+    cout<<"Ingrese la cantidad de términos: ";
+    cin>>n;
+    long long s=0;
+    for(int i=2; i<=n*2; i=i+2) {
+        s=s+f(i);
+    }
+    cout<<"La suma de factoriales pares es: "<<s;
+    return 0;
+}
