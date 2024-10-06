@@ -1,0 +1,27 @@
+#include <iostream>
+#include <chrono>
+#include <thread>
+using namespace std;
+int main() {
+    int h,m,s;
+    h=0;m=0;s=0;
+    for(;;){
+    cout<<"\r"<<"|  "<<h<<" : "<<m<<" : "<<s<<"  |";
+    cout.flush();
+    s++;
+    if(s==60){
+        s=0;
+        m++;
+        if(m==60){
+            m=0;
+            h++;
+            if(h==24){
+                h=0;
+            }
+        }
+    }
+    this_thread::sleep_for(chrono::seconds(1));
+    }
+    
+   return 0;
+}
