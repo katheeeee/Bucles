@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main() {
+    float n,a,b,p;
+    cout<<"ingrese la cantidad de numeros: "<<endl;
+    cin>>n;
+    for(int i=0;i<n;i++){
+        cout<<"ingrese el numero "<< i+1<<":";
+        cin>>b;
+        a=a+b;
+            }
+            p=a/n;
+            cout<<"el promedio es: "<<p<<endl;
+    
+    return 0;
+}
