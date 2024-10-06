@@ -2,19 +2,21 @@
 using namespace std;
 long long f(int n) {
     long long r=1;
-    for(int i= 2;i<=n; i++) {
+    for(int i=2; i<=n; i++) {
         r=r*i;
     }
     return r;
 }
+
 int main() {
     int n;
     cout<<"Ingrese la cantidad de términos: ";
     cin>>n;
-    long long s=0;
+    long long SF = 0;
     for(int i=2; i<=n*2; i=i+2) {
-        s=s+f(i);
+        SF=SF+f(i);
     }
-    cout<<"La suma de factoriales pares es: "<<s;
+    cout<<"La suma de factoriales pares es: "<<SF;
+
     return 0;
 }
