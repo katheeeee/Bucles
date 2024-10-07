@@ -13,6 +13,10 @@ int main() {
         SUM=SUM+T;
         signo= !signo;
     }
-    cout << "El resultado es SUM = " << SUM;
+cout << "La sumatoria es: ";
+    for(int i = 1; i <= n; i++) {
+        cout << (i == 1 ? "" : "+") << i+1<<"/"<<i+2;
+    }
+    cout << " = " << SUM << endl;   
     return 0;
 }
