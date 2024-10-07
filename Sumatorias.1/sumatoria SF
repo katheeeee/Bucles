@@ -16,7 +16,12 @@ int main() {
     for(int i=2; i<=n*2; i=i+2) {
         SF=SF+f(i);
     }
-    cout<<"La suma de factoriales pares es: "<<SF;
+    cout << "La sumatoria en SF: ";
+    for(int i = 1; i <= n; i++) {
+        cout << (i == 1 ? "" : "+") << (2 * i) << "!";
+    }
+    cout << " = " << SF;
+
 
     return 0;
 }
