@@ -20,6 +20,11 @@ int main() {
     for(int i=1; i<=n; i++) {
         ST=ST+pow(x, i) / (double)f(2*i-1);
     }
-    cout<<"La sumatoria en ST= " << ST;
+    cout << "La sumatoria es: ";
+    for(int i = 1; i <= n; i++) {
+        cout << (i == 1 ? "" : "+") << "(" << x << "^" << i << "/" << (2*i) << "!)";
+    }
+    cout << " = " << ST << endl;
+
     return 0;
 }
