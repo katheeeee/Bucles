@@ -11,7 +11,10 @@ int main() {
         D = (2*i-1) * 2*i;
         S += (i % 2 == 1) ? N/D : -N/D;
     }
-    cout << "El resultado es SN = " << S;
-
+cout << "ST: ";
+    for(int i = 1; i <= n; i++) {
+        cout << (i == 1 ? "" : (i % 2 == 1 ? "+" : "-")) << "(" << 2*i-1 << "^" << 2*i << "/" << 2*i-1 << "*" << 2*i << ")";
+    }
+    cout << " = " << S << endl;
     return 0;
 }
