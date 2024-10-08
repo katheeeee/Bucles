@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+    double suma,S,T,x, n;
+    cout << "Ingrese x: ";
+    cin >> x;
+    cout << "Ingrese n: ";
+    cin >> n;
+    suma = 0;
+    cout << "Serie: ";
+    for(int i = 1; i <= n; i++) {
+        S= (i % 2 == 0) ? -1 : 1;
+        T= pow(x, i) / i;
+        cout << S << "(" << x << "^" << i << ")/" << i << " + ";
+        suma += S * T;
+    }
+    cout << "\nResultado: " << suma << endl;
+
+    return 0;
+}
