@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n,s;
+    cout << "Ingrese el número de términos: ";
+    cin >> n;
+    s= 0;
+    cout << "Serie: ";
+    for(int i = 4; i <= 4 + 3*(n-1); i += 3) {
+        cout << i << " + ";
+        s+= i;
+    }
+    cout << "\nResultado: " << s << endl;
+    return 0;
+}
