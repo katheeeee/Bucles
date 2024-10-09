@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std,
+int main(){
+int n,a,b,c,d.e,f,g;
+cin>>n;
+a=0;
+b=2;
+c=2;
+d=1;
+e=2;
+f=6;
+g=8;
+for(int i=1;i<n;i++){
+cout<<a<<" "<<d<<" ";
+a=a+b;
+b=b+c,
+c=c+g;
+d=d+e;
+e=e+f;
+}
+return 0;
+}

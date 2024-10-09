@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std,
+int main(){
+int n,a,b;
+a=2;
+b=-1;
+cin>>n;
+for(int i=0;i<n;i++){
+for(int j=0;j<i;j++){
+cout<<b<<" ";
+b=b+2;
+}
+for(int k=0;k<3){
+cout<<a<<" ";
+a=a+2;
+}
+}
+return 0;
+}
