@@ -1,0 +1,30 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+long long f(int n) {
+    long long r= 1;
+    for(int i=2; i<=n; i++) {
+        r=r*i;
+    }
+    return r;
+}
+
+int main() {
+    int n;
+    double x;
+    cout<<"Ingrese la cantidad de términos (n): ";
+    cin>>n;
+    cout<<"Ingrese el valor de x: ";
+    cin>>x;
+    double ST=0.0;
+    for(int i=1; i<=n; i++) {
+        ST=ST+pow(x, i) / (double)f(2*i-1);
+    }
+    cout << "La sumatoria es: ";
+    for(int i = 1; i <= n; i++) {
+        cout << (i == 1 ? "" : "+") << "(" << x << "^" << i << "/" << (2*i) << "!)";
+    }
+    cout << " = " << ST << endl;
+
+    return 0;
+}
