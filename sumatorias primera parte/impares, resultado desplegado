@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main() {
+int n,a;
+cin>>n;
+a=0;
+for(int i=1;i<=n;i++){
+a=a+2*i-1;
+cout<<2*i-1<<"+";
+}
+cout << "\nResultado: " << a << endl;
+return 0;
+}
