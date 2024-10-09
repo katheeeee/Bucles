@@ -1,14 +1,13 @@
 #include <iostream>
 using namespace std;
 int main() {
-int n,a,
+int n,a;
 cin>>n;
-a=1;
-for(int i=1;1<=n;i++){
-a=a+1;
+a=0;
+for(int i=1;i<=n;i++){
+a=a+2*i;
+cout<<2*i<<"+";
 }
-cout<<"el rsultado es ";
-
-cout<<a;
+cout << "\nResultado: " << a << endl;
 return 0;
 }
