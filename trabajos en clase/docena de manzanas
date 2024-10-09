@@ -1,0 +1,13 @@
+#include <iostream>
+  using namespace std;
+int main(){
+  int n,d;
+  cin>>n;
+  d=n/12;
+  if(n%12==0){
+    cout<<d<<"docena de manzanas";
+  }else{
+    cout<<"no es multiplo de 12";
+  }
+  return 0;
+}
