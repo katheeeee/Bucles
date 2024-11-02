@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std ; 
+int main() {
+    int sx,sx2,sy,sxy,p,Y,N,a,b;
+    float mes[5]={1,2,3,4,5};
+    float ventas[5]={12860,12900,13250,13850,14520};
+    cout<<"ingrese el mes a pronosticar(>5): ";
+    cin>>p;
+    N=5;sx=0; sy=0; sxy=0; sx2=0;
+    for(int i=0;i<=5;i++){
+        sx2+=mes[i]*mes[i];
+        sx+=mes[i];
+        sy+=ventas[i];
+        sxy+=ventas[i]*mes[i];
+    }
+    b=(N*sxy-sx*sy)/(N*sx2-sx*sx);
+    a=(sy-b*sx)/N;
+    Y=a+b*p;
+    cout<<"ventas estimadas: "<<Y;
+    return 0;
+}
