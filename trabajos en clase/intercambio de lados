@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int temp,temp2,n=4;
+    int m[n][n]={
+        {1,2,3,19},
+        {4,5,6,5},
+        {7,8,9,6},
+        {12,1,10,8}
+    };
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            cout<<m[i][j]<<" ";
+        }
+        cout<<"\n";
+    }
+    for(int i=0;i<n;i++){
+        temp=m[i][0];
+        m[i][0]=m[i][2];
+        m[i][2]=temp;
+    }
+    
+    cout<<"Matriz reversa: "<<endl;
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            cout<<m[i][j]<<" ";
+        }
+        cout<<"\n";
+    }
+    return 0;
+}
